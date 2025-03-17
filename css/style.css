@@ -119,3 +119,34 @@ h2{
     margin-left: 0.5rem;
     margin-bottom: 2rem;
 }
+.newsletter {
+    background-color: #252525;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+.email {
+    background-color: white;
+    border-radius: 0.2rem;
+    padding-right: 6rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    color: gray;
+    padding-left: 0.2rem;
+    
+}
+.subscrib {
+
+    background-color: brown;
+    text-decoration: none;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    color: white;
+    border-radius: 0.2rem;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
