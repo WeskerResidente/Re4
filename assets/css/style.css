@@ -9,7 +9,11 @@
     src: url(../fonts/Roboto/static/Roboto-Black.ttf);
 
 }
+* {
+    box-sizing: border-box;
+}
 body {
+    font-family: "Roboto";
     margin: 0;
     width: 100%;
 }
@@ -20,17 +24,21 @@ header {
 }
 a {
     text-decoration: none;
-    padding-right: 30px;
-
 }
+
+ul {
+    padding-left: 0;
+}
+
 ul :last-child {
     border-right: none;
 }
 li {
     list-style: none;
     color: black;
-    font-size: 10px;
+    font-size: 1rem;
     border-right: 1px solid black;
+    padding: 0 10px;
 }
 .menu  {
     display: flex;
@@ -43,8 +51,7 @@ li {
 .menu ul {
 
     font-family: "Roboto";
-    display: flex;
-    gap: 2rem;
+    display: flex;;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
@@ -153,26 +160,27 @@ h2{
     display: flex;
     justify-content: center;
 }
-footer {
 
-    width: 100%;
+footer {
     background-color: rgb(0, 0, 0);
-    height:  3rem;
-    display: inline-block;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
+.img-footer {
+    width: 20%;
+    max-width: 200px;
+}
+
 .img-footer img {
     width: 45%;
-
 }
 .footer-txt ul li {
-    
-
     color: white;
     margin: 0;
-    font-size: 50%;
-    padding: 0.2rem;
+    font-size: 1rem;
+    padding: 0 10px;
     border-right: 1px solid rgb(255, 255, 255);
     text-decoration: none;
     list-style: none;
@@ -182,30 +190,69 @@ footer {
     border-right: none;
 }
 
-.img-footer {
-
-    width: 10%;
-    height: 25%;
-    margin-top: 5px;
-    margin-left: 10rem;
-}
-
 .footer-txt ul{
-    padding: autp;
-    width: 100%;
     display:flex ;
     justify-content: center;
     align-items:center
 }
-.footer-txt {
-    height: 0;
-    margin-right: 5rem;
-    
 
-
-
-}
 .footer-txt ul li a {
     color: white;
 }
 
+@media screen and (max-width: 760px) {
+
+
+    .banner {
+        height: 35vh;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer {
+        width: 60%; 
+        margin: 20px 0;
+    }
+
+    .img-footer img {
+        width: 100%; 
+        height: 100%;
+        
+    }
+        
+    .footer-txt ul {
+        margin: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-txt ul li {
+        border: none;
+    }
+}
+    
+@media screen and (max-width: 360px) {
+
+    .article {
+        flex-direction: column;
+        align-items: center;
+    }
+    .re {
+        width: 100%;
+    }
+    .menu ul {
+        gap: 0rem;
+        justify-content: center;
+    }
+    .menu ul li {
+        margin-left: 8%;
+    }
+    h1 {
+        text-align: center;
+    }
+    .article {
+        margin: 0 5px;
+    }
+}
